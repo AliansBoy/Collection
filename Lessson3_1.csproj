@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Notebook.cs" />
     <Compile Include="CustomList.cs" />
     <Compile Include="ICustomList.cs" />
     <Compile Include="Program.cs" />

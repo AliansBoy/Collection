@@ -35,6 +35,7 @@ namespace Lessson3_1
             List.Delete(NoteBoook_2);
 
             Console.WriteLine("=============================");
+            Console.WriteLine($"{List[1].SerialNumber}; {List[1].Name}");
 
             foreach (var x in List)
             {

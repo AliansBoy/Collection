@@ -23,8 +23,19 @@ namespace Lessson3_1
     {
         Node<T> Head; //link on first element
         Node<T> Tail; //link on Last element
-        public Notebook this[int index] => throw new NotImplementedException();
         int count;
+        public T this[int index]
+        {
+            get 
+            {
+                Node<T> temp = Head;
+                for (int i = 0; i < index; i++)
+                {
+                    temp = temp.Next;
+                }
+                return temp.Element;
+            }
+        }
 
         public void Add(T value)
         {
@@ -94,18 +105,6 @@ namespace Lessson3_1
                 current = current.Next;
             }
         }
-    }
-
-    
-    public class Notebook
-    {
-        public Notebook(int serialNumber, string name)
-        {
-            SerialNumber = serialNumber;
-            Name = name;
-        }
-        public int SerialNumber { get; set; }
-        public string Name { get; set; }
     }
 
 }
